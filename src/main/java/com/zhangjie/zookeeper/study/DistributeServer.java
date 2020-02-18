@@ -17,6 +17,7 @@ public class DistributeServer {
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
         // 创建ZKClient，并连接到ZKServer集群
         DistributeServer server = new DistributeServer();
+        // 测试gitHub能不能成功提交
         server.getConnect();
         // 注册节点
         server.regist(args[0]);
